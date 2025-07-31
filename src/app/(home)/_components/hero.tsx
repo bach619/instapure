@@ -12,7 +12,9 @@ export function Hero() {
 
 
   const handleParticlesLoad = () => {
+    console.log("Particles.js script loaded");
     if (typeof window !== "undefined" && (window as any).particlesJS) {
+      console.log("Initializing particles...");
       (window as any).particlesJS("particles-js", {
         particles: {
           number: {
@@ -85,6 +87,9 @@ export function Hero() {
         },
         retina_detect: true
       });
+      console.log("Particles initialized successfully");
+    } else {
+      console.error("particlesJS not available");
     }
   };
 
