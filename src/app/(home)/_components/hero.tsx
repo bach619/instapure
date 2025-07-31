@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { useTranslations } from "next-intl";
 import { ArrowDown } from "lucide-react";
 import { homeLinks, homeSections } from "@/lib/constants";
@@ -10,8 +10,8 @@ import Script from "next/script";
 export function Hero() {
   const t = useTranslations("pages.home.hero");
 
-  useEffect(() => {
-    // Initialize particles after the script loads
+
+  const handleParticlesLoad = () => {
     if (typeof window !== "undefined" && (window as any).particlesJS) {
       (window as any).particlesJS("particles-js", {
         particles: {
@@ -86,17 +86,18 @@ export function Hero() {
         retina_detect: true
       });
     }
-  }, []);
+  };
 
   return (
     <section
       id={homeSections.hero}
       className="w-full scroll-mt-16 bg-gradient-to-b from-background to-blue-50 py-16 md:py-24 lg:py-32 dark:from-background dark:to-blue-900/20 relative overflow-hidden"
     >
-      {/* Load particles.js */}
+      {/* Load particles.js with proper initialization handling */}
       <Script
         src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
         strategy="afterInteractive"
+        onLoad={handleParticlesLoad}
         onError={(e) => console.error("Failed to load particles.js", e)}
       />
       

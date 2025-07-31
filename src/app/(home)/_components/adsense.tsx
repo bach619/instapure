@@ -28,31 +28,28 @@ const Adsense = ({ format = "autorelaxed", adSlot }: { format?: string; adSlot?:
   }, [adSlot]);
 
   return (
-    <>
-      <Script
-        id="adsense-script"
-        strategy="afterInteractive"
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adClient}`}
+    <div className="my-6 text-center">
+      <Script 
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435811821902528"
         crossOrigin="anonymous"
       />
-
-      <div ref={adRef} className="my-6 text-center">
-        {adSlot ? (
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-client={adClient}
-            data-ad-slot={adSlot}
-            data-ad-format={format}
-            data-full-width-responsive="true"
-          />
-        ) : (
-          <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded text-center">
-            AdSense slot not configured. Please provide an ad slot ID.
-          </div>
-        )}
-      </div>
-    </>
+      
+      {adSlot ? (
+        <ins
+          className="adsbygoogle"
+          style={{ display: "block" }}
+          data-ad-client={adClient}
+          data-ad-slot={adSlot}
+          data-ad-format={format}
+          data-full-width-responsive="true"
+        ></ins>
+      ) : (
+        <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded text-center">
+          AdSense slot not configured. Please provide an ad slot ID.
+        </div>
+      )}
+    </div>
   );
 };
 
