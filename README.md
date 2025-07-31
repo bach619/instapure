@@ -1,4 +1,4 @@
-# IG-Loader (Instagram Video Downloader)
+# Instapure (Instagram Video Downloader)
 
 This project is an educational demonstration of building a web application to
 download Instagram videos using Next.js. The primary goal is to explore modern
@@ -11,7 +11,7 @@ videos from Instagram may violate their Terms of Service. Please respect
 copyright laws and the platform's policies. Use this tool responsibly and only
 for content you have the right to download.
 
-Website Preview: [IG-Loader.netlify.app](https://IG-Loader.netlify.app)
+Website Preview: [instapure.fun)
 
 <<<<<<< HEAD
 =======
