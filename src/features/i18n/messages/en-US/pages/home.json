@@ -2,8 +2,8 @@
   "title": "Instapure",
   "description": "Fast, free, and no login required. Just paste the URL and download.",
   "hero": {
-    "title": "Download Instagram Videos in Seconds",
-    "description": "Fast, free, and no login required. Just paste the URL and download.",
+    "title": "Instagram Video Downloader - Download IG Videos, Reels & Stories in Seconds",
+    "description": "Free Instagram video downloader to save videos, reels, and stories without login. Fast and easy! Paste the Instagram URL and download HD content.",
     "form": {
       "placeholder": "Paste Instagram video URL here...",
       "button": "Download"
@@ -17,20 +17,20 @@
     "description": "Everything you need to download Instagram videos quickly and easily",
     "cards": {
       "free": {
-        "title": "100% Free",
-        "description": "No hidden fees, subscriptions, or limits. Download unlimited videos without paying a cent."
+        "title": "Free Instagram Downloader",
+        "description": "Download unlimited Instagram videos without paying a cent. No hidden fees, subscriptions, or limits."
       },
       "noRegistration": {
-        "title": "No Registration",
-        "description": "Skip the hassle of creating accounts or logging in. Instant access with no personal data required."
+        "title": "No Login Required",
+        "description": "Skip the hassle of creating accounts. Save Instagram videos instantly without login or personal data."
       },
       "fast": {
-        "title": "Lightning Fast",
-        "description": "Our optimized servers process your requests instantly, delivering videos in seconds, not minutes."
+        "title": "Fast Instagram Downloads",
+        "description": "Download Instagram videos in seconds with our optimized servers. Get your content instantly."
       },
       "hdQuality": {
-        "title": "HD Quality",
-        "description": "Download videos in the highest quality available, preserving the original resolution and clarity."
+        "title": "HD Instagram Videos",
+        "description": "Save Instagram videos in the highest quality available, preserving original HD resolution and clarity."
       }
     }
   },
