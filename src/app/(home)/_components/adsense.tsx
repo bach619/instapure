@@ -11,7 +11,6 @@ declare global {
 
 const Adsense = ({ format = "autorelaxed", adSlot }: { format?: string; adSlot?: string }) => {
   const adClient = "ca-pub-6435811821902528";
-  const adRef = useRef<HTMLDivElement>(null);
   const pushedRef = useRef(false);
 
   useEffect(() => {
