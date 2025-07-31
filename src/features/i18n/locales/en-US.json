@@ -1,0 +1,157 @@
+{
+  "components": {
+    "instagramForm": {
+      "inputs": {
+        "url": {
+          "label": "Instagram Post URL",
+          "placeholder": "Enter the Instagram post or reel URL...",
+          "validation": {
+            "required": "Instagram post URL is required",
+            "invalid": "Please enter a valid Instagram post or reel URL"
+          }
+        }
+      },
+      "serverErrors": {
+        "notFound": "We couldn’t find the post. Please check the URL.",
+        "notVideo": "This post does not contain a downloadable video.",
+        "tooManyRequests": "Too many requests. Please try again shortly.",
+        "serverError": "Oops! Server error. Try again later."
+      },
+      "toasts": {
+        "success": "Video is now downloading...",
+        "error": "An error occurred. Please try again."
+      },
+      "hint": "Supports Instagram posts and reels",
+      "submit": "Download Now"
+    }
+  },
+  "layouts": {
+    "home": {
+      "header": {
+        "themeLabel": "Theme",
+        "localeLabel": "Language",
+        "links": {
+          "features": "Features",
+          "howItWorks": "How It Works",
+          "frequentlyAsked": "FAQ"
+        }
+      },
+      "footer": {
+        "copyright": "© {year} InstaPure. All rights reserved.",
+        "links": {
+          "terms": "Terms of Service",
+          "privacy": "Privacy Policy",
+          "contact": "Contact Us"
+        }
+      }
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "InstaPure",
+      "description": "Download Instagram videos instantly. No login required. Completely free.",
+      "hero": {
+        "title": "Download Any Instagram Video Instantly",
+        "description": "Fast, secure, and completely free. Paste your Instagram link and download without watermarks.",
+        "form": {
+          "placeholder": "Paste your Instagram URL here...",
+          "button": "Download Now"
+        },
+        "formHint": "Compatible with Instagram posts, reels, and IGTV",
+        "learnMore": "See how it works"
+      },
+      "features": {
+        "badge": "What Makes It Great",
+        "title": "Features You’ll Love",
+        "description": "Everything you need to download your favorite Instagram videos effortlessly.",
+        "cards": {
+          "free": {
+            "title": "Absolutely Free",
+            "description": "Download unlimited Instagram content without paying anything. No hidden costs."
+          },
+          "noRegistration": {
+            "title": "No Sign-Up Needed",
+            "description": "No accounts, no logins. Start downloading instantly with just a URL."
+          },
+          "fast": {
+            "title": "Ultra-Fast Downloads",
+            "description": "Optimized performance ensures your videos are ready in seconds."
+          },
+          "hdQuality": {
+            "title": "HD Video Quality",
+            "description": "Download videos in their original high definition without compression or watermark."
+          }
+        }
+      },
+      "howItWorks": {
+        "badge": "3-Step Process",
+        "title": "How to Use It",
+        "description": "Download Instagram content in just three simple steps.",
+        "steps": {
+          "copy": {
+            "title": "Step 1: Copy the Link",
+            "descriptionDesktop": "Find the Instagram video or reel you want and copy its URL from the address bar or share menu.",
+            "descriptionMobile": "Copy the video link from the Instagram app or browser."
+          },
+          "paste": {
+            "title": "Step 2: Paste It Here",
+            "descriptionDesktop": "Paste the copied link into the download box on this page.",
+            "descriptionMobile": "Paste the link into the input field."
+          },
+          "download": {
+            "title": "Step 3: Download Instantly",
+            "descriptionDesktop": "Click the download button and get your video file instantly, watermark-free.",
+            "descriptionMobile": "Hit download and the video will be saved to your device."
+          }
+        },
+        "ctaButton": "Get Started"
+      },
+      "testimonials": {
+        "title": "Trusted by Thousands",
+        "description": "Join a growing community of users who download Instagram content daily with confidence.",
+        "stats": {
+          "downloads": "Daily Downloads",
+          "users": "Active Users",
+          "rating": "Average Rating"
+        }
+      },
+      "frequentlyAsked": {
+        "badge": "Need Help?",
+        "title": "Frequently Asked Questions",
+        "description": "Quick answers to your most common questions about using InstaPure.",
+        "sections": {
+          "general": {
+            "title": "General",
+            "q1": {
+              "trigger": "Is the service really free?",
+              "content": "Yes! InstaPure is completely free to use. We don’t charge fees or ask for payment info."
+            },
+            "q2": {
+              "trigger": "Do I need an account to use it?",
+              "content": "Not at all. Just paste the Instagram URL and start downloading. No registration needed."
+            },
+            "q3": {
+              "trigger": "Is it legal to download videos?",
+              "content": "Our tool is for personal use only. Always respect content ownership and copyright laws."
+            }
+          },
+          "technical": {
+            "title": "Technical",
+            "q1": {
+              "trigger": "What Instagram content types are supported?",
+              "content": "You can download public posts, reels, and IGTV videos. Stories and highlights are not currently supported."
+            },
+            "q2": {
+              "trigger": "How good is the video quality?",
+              "content": "We deliver the highest available resolution—usually HD (1080p)—based on the original content."
+            },
+            "q3": {
+              "trigger": "Can I use it on mobile?",
+              "content": "Yes! InstaPure works seamlessly on phones, tablets, and desktops alike."
+            }
+          }
+        }
+      }
+    }
+  }
+}
