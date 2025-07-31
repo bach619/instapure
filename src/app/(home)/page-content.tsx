@@ -3,23 +3,22 @@ import { Features } from "./_components/features";
 import { HowItWorks } from "./_components/how-it-works";
 import { Testimonials } from "./_components/testimonials";
 import { FrequentlyAsked } from "./_components/frequently-asked";
-import { Adsense } from "./_components/adsense";
+import Adsense from "./_components/adsense";
 
 export default function HomePage() {
   return (
     <div>
-
       {/* Hero Section */}
       <Hero />
       
-      {/* Features Section */}
-      <Adsense />
-
       {/* Features Section */}
       <Features />
 
       {/* How It Works Section */}
       <HowItWorks />
+
+      {/* Ad Section */}
+      <Adsense format="autorelaxed" />
 
       {/* Testimonials Section */}
       <Testimonials />

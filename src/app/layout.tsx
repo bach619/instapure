@@ -29,6 +29,8 @@ export default async function RootLayout({
     <html lang={locale} className="scroll-smooth" suppressHydrationWarning>
       <head>
         <meta name="google-adsense-account" content="ca-pub-6435811821902528" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435811821902528"
+          crossOrigin="anonymous"></script>
       </head>
       <body className={cn("antialiased", dmSans.variable)} suppressHydrationWarning>
         <LocaleProvider locale={locale} messages={messages}>

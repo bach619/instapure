@@ -247,15 +247,16 @@ export function InstagramForm({ className }: { className?: string }) {
                       minLength={1}
                       maxLength={255}
                       placeholder={t("inputs.url.placeholder")}
+                      className="focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:ring-opacity-50 transition-all duration-200"
                     />
                     {isShowClearButton && (
                       <Button
                         size="icon"
                         variant="ghost"
                         onClick={clearUrlField}
-                        className="absolute top-1/2 right-2 h-4 w-4 -translate-y-1/2 cursor-pointer"
+                        className="absolute top-1/2 right-2 h-5 w-5 -translate-y-1/2 cursor-pointer bg-red-100 hover:bg-red-200 dark:bg-red-900/30 dark:hover:bg-red-800"
                       >
-                        <X className="text-red-500" />
+                        <X className="h-4 w-4 text-red-500" />
                       </Button>
                     )}
                   </div>
@@ -266,12 +267,12 @@ export function InstagramForm({ className }: { className?: string }) {
           <Button
             disabled={isDisabled}
             type="submit"
-            className="bg-teal-500 text-white hover:bg-teal-600 dark:bg-teal-700 dark:hover:bg-teal-600"
+            className="text-white bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-700 hover:to-teal-600 dark:hover:from-blue-700 dark:hover:to-teal-600 shadow-md transition-all duration-300 hover:scale-[1.02]"
           >
             {isPending ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
+              <Loader2 className="h-4 w-4 animate-spin mr-2" />
             ) : (
-              <Download className="h-4 w-4" />
+              <Download className="h-4 w-4 mr-2" />
             )}
             {t("submit")}
           </Button>
