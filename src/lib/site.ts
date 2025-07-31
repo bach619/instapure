@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Instapure",
-  domain: "Instapure.netlify.app",
+  domain: "Instapure.fun",
   shortName: "Instapure",
   creator: "Boby Mihing",
   description:
