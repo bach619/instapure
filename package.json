@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "build:locales": "python scripts/build_locales.py",
+    "build:locales": "node scripts/build_locales.js",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"
