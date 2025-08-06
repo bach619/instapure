@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-3">3. Anonymous Usage</h2>
         <p className="mb-4">
-          Since we don't collect any personal data, your usage of our service is completely anonymous. 
+          Since we don&#39;t collect any personal data, your usage of our service is completely anonymous. 
           We have no way to identify users or track their activities.
         </p>
       </section>
