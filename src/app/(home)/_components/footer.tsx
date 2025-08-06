@@ -1,10 +1,9 @@
 import React from "react";
-
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export function Footer() {
   const t = useTranslations("layouts.home.footer");
-
   const year = new Date().getFullYear();
 
   return (
@@ -14,24 +13,18 @@ export function Footer() {
           {t("copyright", { year })}
         </p>
         <div className="flex gap-4">
-          <a
-            href="#"
+          <Link
+            href="/terms-of-service"
             className="text-muted-foreground text-sm hover:text-teal-500"
           >
             {t("links.terms")}
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/privacy-policy"
             className="text-muted-foreground text-sm hover:text-teal-500"
           >
             {t("links.privacy")}
-          </a>
-          <a
-            href="#"
-            className="text-muted-foreground text-sm hover:text-teal-500"
-          >
-            {t("links.contact")}
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
