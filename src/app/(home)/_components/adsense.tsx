@@ -9,22 +9,44 @@ declare global {
   }
 }
 
-const Adsense = ({ format = "autorelaxed", adSlot }: { format?: string; adSlot?: string }) => {
+const Adsense = ({ 
+  format = "autorelaxed", 
+  adSlot,
+  minContentLength = 500 
+}: { 
+  format?: string; 
+  adSlot?: string;
+  minContentLength?: number;
+}) => {
   const adClient = "ca-pub-6435811821902528";
   const pushedRef = useRef(false);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (!pushedRef.current && typeof window !== "undefined" && adSlot) {
+    if (!adSlot) {
+      console.warn("AdSense adSlot not provided. Ads will not load.");
+      return;
+    }
+
+    // Check if page has sufficient content
+    const contentElement = contentRef.current?.closest('main, [role="main"]') || document.body;
+    const textContent = contentElement.textContent || '';
+    const wordCount = textContent.split(/\s+/).length;
+
+    if (wordCount < minContentLength) {
+      console.warn(`AdSense not loaded: Page has only ${wordCount} words (minimum ${minContentLength} required)`);
+      return;
+    }
+
+    if (!pushedRef.current && typeof window !== "undefined") {
       try {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         pushedRef.current = true;
       } catch (e) {
         console.error("AdSense initialization error:", e);
       }
-    } else if (!adSlot) {
-      console.warn("AdSense adSlot not provided. Ads will not load.");
     }
-  }, [adSlot]);
+  }, [adSlot, minContentLength]);
 
   return (
     <div className="my-6 text-center">
@@ -34,18 +56,16 @@ const Adsense = ({ format = "autorelaxed", adSlot }: { format?: string; adSlot?:
         crossOrigin="anonymous"
       />
       
-      {adSlot ? (
-        <ins
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client={adClient}
-          data-ad-slot={adSlot}
-          data-ad-format={format}
-          data-full-width-responsive="true"
-        ></ins>
-      ) : (
-        <div className="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded text-center">
-          AdSense slot not configured. Please provide an ad slot ID.
+      {adSlot && (
+        <div ref={contentRef}>
+          <ins
+            className="adsbygoogle"
+            style={{ display: "block" }}
+            data-ad-client={adClient}
+            data-ad-slot={adSlot}
+            data-ad-format={format}
+            data-full-width-responsive="true"
+          ></ins>
         </div>
       )}
     </div>
