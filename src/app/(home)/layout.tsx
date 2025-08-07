@@ -13,16 +13,9 @@ export default function HomeLayout({
       <Header />
 <div className="flex flex-1">
   {/* Sidebar kiri untuk desktop */}
-  <aside className="hidden lg:block w-72 p-4">
-    <AdSense adSlot="3697731459" />
-  </aside>
-
-  <main className="flex-1 container mx-auto px-4">{children}</main>
-  
-  {/* Sidebar kanan untuk desktop */}
-  <aside className="hidden lg:block w-72 p-4">
-    <AdSense adSlot="3697731459" />
-  </aside>
+   <main className="flex-1 container mx-auto px-4">{children}</main>
+   {/* Sidebar kanan untuk desktop */}
+ 
 </div>
       
       

@@ -11,6 +11,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero />
       
+      <Adsense adSlot="YOUR_AD_SLOT_ID" />
+      
       {/* Features Section */}
       <Features />
 
@@ -30,7 +32,6 @@ export default function HomePage() {
         You can find this in your AdSense dashboard under "My ads" > "Ad units"
         Example: <Adsense adSlot="1234567890" /> 
       */}
-      <Adsense adSlot="YOUR_AD_SLOT_ID" />
     </div>
   );
 }
