@@ -3,7 +3,7 @@ import { Features } from "./_components/features";
 import { HowItWorks } from "./_components/how-it-works";
 import { Testimonials } from "./_components/testimonials";
 import { FrequentlyAsked } from "./_components/frequently-asked";
-import Adsense from "@/app/(home)/_components/adsense";
+// import Adsense from "@/app/(home)/_components/adsense";
 
 export default function HomePage() {
   return (
