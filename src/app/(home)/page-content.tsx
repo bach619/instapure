@@ -10,9 +10,7 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <Hero />
-      
-      <Adsense adSlot="YOUR_AD_SLOT_ID" />
-      
+          
       {/* Features Section */}
       <Features />
 
