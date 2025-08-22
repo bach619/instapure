@@ -12,8 +12,11 @@ export const siteConfig = {
 
 export const siteMetadata = {
   title: "Instapure - Download Instagram Videos, Reels & Photos | Free Instagram Downloader",
-  description: "Download Instagram videos, reels, stories, and photos instantly with Instapure. Free, fast, and no login required. Save IG content in HD quality with our easy-to-use Instagram downloader.",
-  keywords: "instagram downloader, download instagram videos, save instagram videos, free instagram downloader, instagram video download, ig downloader, instagram reels download, instagram story download",
+  description: "Download Instagram videos, reels, stories, and photos instantly with Instapure. Free, fast, and no login required. Save IG content in HD quality with our easy-to-use Instagram downloader. Perfect for downloading Instagram videos without watermark, saving Instagram stories anonymously, and downloading Instagram reels without account.",
+  keywords: `instagram downloader, download instagram videos, save instagram videos, free instagram downloader, 
+    instagram video download, ig downloader, instagram reels download, instagram story download,
+    download instagram videos without watermark, how to download instagram videos, instagram video saver,
+    download instagram reels without account, save instagram stories anonymously, free instagram video downloader online`,
   openGraph: {
     title: "Instapure - Free Instagram Video Downloader",
     description: "Download Instagram videos, reels, stories, and photos in seconds without login. 100% free Instagram downloader.",
