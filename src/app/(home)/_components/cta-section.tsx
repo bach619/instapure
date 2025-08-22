@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 interface CtaSectionProps {
@@ -18,7 +19,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({
           className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-6 text-lg font-bold"
           asChild
         >
-          <a href="/">{buttonText}</a>
+        <Link href="/">{buttonText}</Link>
         </Button>
       </div>
     </section>
